@@ -22,3 +22,4 @@ for f in *.mov ; do echo file \'$f\' >> list.txt; done && ffmpeg -f concat -safe
 - https://developers.google.com/youtube/v3/guides/uploading_a_video
 - https://www.programcreek.com/python/example/117480/ffmpeg.input
 - https://stackoverflow.com/questions/37748105/how-to-use-progressbar-module-with-urlretrieve
+- https://janakiev.com/blog/python-shell-commands/
