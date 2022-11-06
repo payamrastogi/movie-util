@@ -2,3 +2,5 @@
 /.ipynb_checkpoints/
 /data/
 /output/
+/input/
+/client_secrets.json

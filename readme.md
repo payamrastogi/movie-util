@@ -14,6 +14,11 @@ ffmpeg
 for f in *.mov ; do echo file \'$f\' >> list.txt; done && ffmpeg -f concat -safe 0 -i list.txt -c copy stitched-video.mov && rm list.txt
 ```
 
+```python
+import os
+os.system('ffmpeg -f concat -safe 0 -i ./data/list.txt -c copy stitched-video.mov && rm ./data/list.txt')
+```
+
 # References
 - https://pypi.org/project/ffmpeg-python/
 - https://github.com/kkroening/ffmpeg-python
@@ -23,3 +28,4 @@ for f in *.mov ; do echo file \'$f\' >> list.txt; done && ffmpeg -f concat -safe
 - https://www.programcreek.com/python/example/117480/ffmpeg.input
 - https://stackoverflow.com/questions/37748105/how-to-use-progressbar-module-with-urlretrieve
 - https://janakiev.com/blog/python-shell-commands/
+- https://stackoverflow.com/questions/15233340/getting-rid-of-n-when-using-readlines

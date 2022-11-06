@@ -10,3 +10,21 @@ class FileUtil:
                     file_name_list.append(os.path.join(root, file))
         file_name_list.sort()
         return file_name_list
+
+    @staticmethod
+    def get_urls(file_path):
+        with open(file_path, 'r') as f:
+            url_list = f.read().splitlines()
+        return url_list
+
+    @staticmethod
+    def get_file_name(url):
+        if url:
+            filename, ext = (url.split('/')[-1].split('.'))
+            return filename, ext
+        return None, None
+
+if __name__=="__main__":
+    file_util = FileUtil()
+    lst = file_util.get_urls("/home/payam/workspace/movie-util/input/avatar_trailers.txt")
+    print(lst)
